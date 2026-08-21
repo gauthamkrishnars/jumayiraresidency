@@ -23,7 +23,7 @@ Built by rebranding a previous client's website (Lakeside Meadows — a homestay
 | Google Maps | https://maps.app.goo.gl/C8prav9S9SSUh79D9 |
 | Coordinates | 8.400034, 76.9753352 |
 | WhatsApp Booking | https://wa.me/919400127085 |
-| Netlify URL | https://jumayiraresidency.netlify.app/ |
+| Cloudflare URL | https://jumayiraresidency.pages.dev/ |
 
 ---
 
@@ -85,6 +85,7 @@ Jumayira Residency/
 ├── gallery.html            ← Photo gallery page
 ├── .gitignore              ← Ignores .DS_Store, Thumbs.db, etc.
 ├── README.md               ← This file
+├── CNAME                   ← (if exists, custom domain config)
 │
 ├── Logo.png                ← ✅ Correct logo (client provided, blue JR monogram)
 ├── Hero.jpg                ← ⚠️ NEEDS REPLACING (currently Lakeside Meadows image)
@@ -129,9 +130,10 @@ git commit -m "Replace placeholder images with actual hotel photos"
 git push
 ```
 
-### Priority 4: Deploy to Netlify
-- Connect GitHub repo to Netlify
-- Or manually upload the folder
+### Priority 4: Deploy to Cloudflare Pages
+- Already deployed at https://jumayiraresidency.pages.dev/
+- Connected to GitHub repo, auto-deploys on push
+- Just push new images and they'll go live automatically
 
 ---
 
@@ -156,7 +158,7 @@ git push
 ### Key URLs in Code
 - WhatsApp: `https://wa.me/919400127085?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room.`
 - Google Maps: `https://maps.app.goo.gl/C8prav9S9SSUh79D9`
-- Netlify OG URL: `https://jumayiraresidency.netlify.app/`
+- Cloudflare URL: `https://jumayiraresidency.pages.dev/`
 
 ### Sections in index.html
 1. Nav (sticky, black background)
