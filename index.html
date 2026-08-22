@@ -526,6 +526,13 @@
         @media(max-width: 900px) {
             html, body { overflow-x: hidden; width: 100%; }
             main { overflow-x: hidden; }
+            .booking-engine { overflow-x: hidden; }
+            .booking-card { padding: 2rem 1.25rem; width: 100%; overflow: hidden; box-sizing: border-box; }
+            .form-row-2col { display: flex !important; flex-direction: column !important; gap: 1.5rem !important; margin-bottom: 1.5rem !important; width: 100% !important; box-sizing: border-box; }
+            .form-row-2col > div, .form-group-full { width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
+            .booking-input, select { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; background-color: #fff; min-width: 0; padding: 1rem; }
+            .price-display-container { width: 100%; overflow: hidden; padding: 1.5rem; margin: 1.5rem 0; box-sizing: border-box; }
+            #price-display { font-size: 2.5rem !important; }
             #loading-screen { padding: 1rem; }
             .loading-logo img { width: 100px; }
             .loading-logo .loading-title { font-size: clamp(1.5rem, 7vw, 2.5rem); letter-spacing: 0.02em; }
@@ -558,13 +565,6 @@
             .room-tab:last-child { border-radius: 0 0 4px 4px !important; border-left: 2px solid var(--clr-red) !important; }
             .room-grid { grid-template-columns: 1fr; }
             .room-tab-content.active { grid-template-columns: 1fr; }
-            .booking-card { padding: 2rem 1.25rem; width: 100%; overflow: hidden; box-sizing: border-box; }
-            .form-row-2col { display: flex !important; flex-direction: column !important; gap: 1.5rem !important; margin-bottom: 1.5rem !important; width: 100% !important; box-sizing: border-box; }
-            .form-row-2col > div, .form-group-full { width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
-            .booking-input, select { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; background-color: #fff; min-width: 0; }
-            .price-display-container { width: 100%; overflow: hidden; }
-            .price-display-container { padding: 1.5rem; margin: 1.5rem 0; width: 100%; box-sizing: border-box; }
-            #price-display { font-size: 2.5rem !important; }
             .mobile-bottom-widget { display: flex; flex-direction: column; align-items: center; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 998; width: auto; }
             .mobile-bottom-widget .btn-book { filter: drop-shadow(0 4px 15px rgba(0,0,0,0.25)); padding: 1rem 3rem !important; font-size: 0.85rem !important; letter-spacing: 2px !important; }
             .footer-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
@@ -580,7 +580,7 @@
             .intro-text { font-size: 1.1rem; }
             .gallery-preview-grid { grid-template-columns: 1fr; }
             .gallery-preview-item { height: 200px; }
-            .room-card-img { height: 240px; }
+            .room-card-img { height: 280px; }
             .loading-logo img { width: 80px; }
             .loading-logo .loading-title { font-size: 1.4rem; }
             .booking-card { padding: 1.5rem 1rem; }
