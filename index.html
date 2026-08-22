@@ -1238,23 +1238,42 @@
                         if (lenis) lenis.scrollTo(targetElement, { offset: -90, duration: 1.4 });
                         else targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
-                    var mobileOverlay = document.getElementById('mobile-nav-overlay');
-                    var hamburger = document.getElementById('hamburger-menu');
-                    if (mobileOverlay && mobileOverlay.classList.contains('active')) { mobileOverlay.classList.remove('active'); hamburger.classList.remove('active'); }
+                    closeMenu();
                 });
             });
 
             var hamburger = document.getElementById('hamburger-menu');
             var mobileOverlay = document.getElementById('mobile-nav-overlay');
             var mobileLinks = document.querySelectorAll('.mobile-link');
+            function closeMenu() {
+                if (!mobileOverlay || !hamburger) return;
+                hamburger.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                document.body.classList.remove('no-scroll');
+                if (lenis) { try { lenis.start(); } catch(e) {} }
+            }
             function toggleMenu() {
-                hamburger.classList.toggle('active');
-                mobileOverlay.classList.toggle('active');
-                if (mobileOverlay.classList.contains('active')) { if (lenis) lenis.stop(); else document.body.style.overflow = 'hidden'; }
-                else { if (lenis) lenis.start(); else document.body.style.overflow = ''; }
+                if (mobileOverlay.classList.contains('active')) { closeMenu(); }
+                else {
+                    hamburger.classList.add('active');
+                    mobileOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    if (lenis) { try { lenis.stop(); } catch(e) {} }
+                }
             }
             hamburger.addEventListener('click', toggleMenu);
-            mobileLinks.forEach(function(link) { link.addEventListener('click', toggleMenu); });
+            mobileLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    closeMenu();
+                    var href = this.getAttribute('href');
+                    if (href && href !== '#') {
+                        var target = document.querySelector(href);
+                        if (target) { setTimeout(function() { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 300); }
+                    }
+                });
+            });
 
             // Intersection Observer
             var revealObserver = new IntersectionObserver(function(entries, observer) {
