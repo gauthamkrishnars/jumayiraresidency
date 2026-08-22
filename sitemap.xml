@@ -16,6 +16,10 @@
       <image:loc>https://jumayiraresidency.pages.dev/reception.jpeg</image:loc>
       <image:title>Jumayira International reception area</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://jumayiraresidency.pages.dev/ac double bed.JPG</image:loc>
+      <image:title>AC Double Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
   </url>
 
   <!-- Gallery Page -->
@@ -31,6 +35,10 @@
     <image:image>
       <image:loc>https://jumayiraresidency.pages.dev/ac double bed.JPG</image:loc>
       <image:title>AC Double Bed room at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayiraresidency.pages.dev/bathroom 1.jpeg</image:loc>
+      <image:title>Bathroom at Jumayira International Kovalam</image:title>
     </image:image>
   </url>
 

@@ -30,3 +30,6 @@
 
 /*.js
   Cache-Control: public, max-age=31536000, immutable
+
+/lenis.min.js
+  Cache-Control: public, max-age=31536000, immutable
