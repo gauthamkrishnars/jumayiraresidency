@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Jumayira International - Kovalam, Kerala</title>
+    <meta name="description" content="Explore the rooms, exterior, and surroundings of Jumayira International through our curated photo gallery of Kovalam's most welcoming hotel.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jumayiraresidency.pages.dev/gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jumayiraresidency.pages.dev/gallery.html">
+    <meta property="og:title" content="Photo Gallery | Jumayira International - Kovalam Hotel">
+    <meta property="og:description" content="Explore the rooms and surroundings of Jumayira International through our curated photo gallery.">
+    <meta property="og:image" content="https://jumayiraresidency.pages.dev/hero-main.jpg">
+    <meta property="og:image:alt" content="Jumayira International hotel photo gallery in Kovalam Kerala">
+    <meta property="og:site_name" content="Jumayira International">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Photo Gallery | Jumayira International - Kovalam">
+    <meta name="twitter:description" content="Explore the rooms and surroundings of Jumayira International.">
+    <meta name="twitter:image" content="https://jumayiraresidency.pages.dev/hero-main.jpg">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <meta name="theme-color" content="#B91C1C">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jumayiraresidency.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://jumayiraresidency.pages.dev/gallery.html" }
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --clr-bg-cream: #FDF8F6; --clr-bg-pink: #FDF0ED; --clr-text-main: #2A2A2A;
+            --clr-text-alt: #4A4A4A; --clr-red: #B91C1C; --clr-gold: #C5A880;
+            --ff-serif: 'Cormorant Garamond', serif; --ff-script: 'Great Vibes', cursive;
+            --ff-sans: 'Montserrat', sans-serif; --ease-out-smooth: cubic-bezier(0.21, 1.02, 0.49, 1);
+        }
+        html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+        body { background-color: var(--clr-bg-cream); color: var(--clr-text-main); font-family: var(--ff-sans); line-height: 1.8; overflow-x: hidden; width: 100%; }
+        img { max-width: 100%; height: auto; display: block; }
+        nav {
+            background-color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05); flex-wrap: wrap; gap: 15px; width: 100%; position: sticky; top: 0; z-index: 1000;
+        }
+        .navBrand { text-decoration: none; display: flex; align-items: center; gap: 12px; }
+        .navBrandImg { height: 50px; width: auto; object-fit: contain; }
+        .navBrandText { font-family: var(--ff-serif); font-size: 1.4rem; font-weight: 500; color: var(--clr-text-main); letter-spacing: 1px; }
+        .backBtn {
+            font-weight: 500; font-family: var(--ff-sans); color: #fff; background-color: var(--clr-red);
+            text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem;
+            padding: 12px 28px; border-radius: 2px; transition: all 0.4s var(--ease-out-smooth);
+            display: inline-block; text-align: center; white-space: nowrap;
+        }
+        .backBtn:hover { background-color: var(--clr-gold); color: #fff; }
+        .galleryHero { text-align: center; padding: 5rem 5% 3rem 5%; max-width: 1200px; margin: 0 auto; opacity: 0; transform: translateY(30px); animation: fadeUp 1s var(--ease-out-smooth) forwards; }
+        .galleryHero .eyebrow { font-family: var(--ff-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--clr-red); margin-bottom: 1rem; }
+        .galleryHero h1 { font-family: var(--ff-serif); font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 300; margin-bottom: 1.2rem; color: var(--clr-text-main); line-height: 1.2; }
+        .galleryHero h1 em { font-family: var(--ff-script); font-style: normal; color: var(--clr-red); }
+        .decorativeLine { width: 80px; height: 2px; background: linear-gradient(90deg, var(--clr-red), var(--clr-gold)); margin: 0 auto 2rem auto; }
+        .galleryHero p { color: var(--clr-text-alt); font-size: 1rem; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+        .categoryNav { text-align: center; padding: 1rem 5% 2.5rem 5%; }
+        .categoryNav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+        .categoryNav li button {
+            font-family: var(--ff-sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 1.5px;
+            text-transform: uppercase; padding: 10px 24px; border: 1px solid var(--clr-red);
+            background: transparent; color: var(--clr-text-alt); cursor: pointer; transition: all 0.3s ease; border-radius: 2px;
+        }
+        .categoryNav li button:hover, .categoryNav li button.active { background-color: var(--clr-red); color: #fff; border-color: var(--clr-red); }
+        .galleryGrid { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; padding: 0 5% 6rem 5%; max-width: 1600px; margin: 0 auto; }
+        .galleryItem { flex: 1 1 calc(33.333% - 24px); min-width: 280px; max-width: 480px; position: relative; overflow: hidden; border-radius: 4px; cursor: pointer; opacity: 0; transform: translateY(40px); }
+        .galleryItem.visible { opacity: 1; transform: translateY(0); transition: opacity 0.8s var(--ease-out-smooth), transform 0.8s var(--ease-out-smooth); }
+        .galleryItem img { width: 100%; height: 320px; object-fit: cover; transition: transform 0.6s var(--ease-out-smooth), filter 0.6s ease; background-color: var(--clr-text-main); }
+        .galleryItem:hover img { transform: scale(1.06); }
+        .galleryItem .overlay {
+            position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem 1.2rem 1.2rem 1.2rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%); color: #fff;
+            transform: translateY(100%); transition: transform 0.4s var(--ease-out-smooth);
+        }
+        .galleryItem:hover .overlay { transform: translateY(0); }
+        .overlay h2 { font-family: var(--ff-serif); font-size: 1.1rem; font-weight: 500; margin-bottom: 0.3rem; }
+        .overlay p { font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; opacity: 0.8; }
+        .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.92); z-index: 9999; justify-content: center; align-items: center; flex-direction: column; opacity: 0; transition: opacity 0.3s ease; }
+        .lightbox.active { display: flex; opacity: 1; }
+        .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 4px; }
+        .lightbox .caption { color: rgba(255,255,255,0.8); font-family: var(--ff-sans); font-size: 0.85rem; margin-top: 1rem; letter-spacing: 1px; }
+        .lightbox .closeBtn { position: absolute; top: 20px; right: 30px; font-size: 2rem; color: #fff; cursor: pointer; transition: color 0.3s ease; background: none; border: none; font-family: var(--ff-sans); }
+        .lightbox .closeBtn:hover { color: var(--clr-red); }
+        .lightbox .navArrow { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: rgba(255,255,255,0.7); cursor: pointer; transition: color 0.3s ease; background: none; border: none; padding: 20px; }
+        .lightbox .navArrow:hover { color: var(--clr-red); }
+        .lightbox .navArrow.prev { left: 10px; }
+        .lightbox .navArrow.next { right: 10px; }
+        footer { background-color: var(--clr-text-main); color: rgba(255,255,255,0.7); text-align: center; padding: 3rem 5%; font-size: 0.85rem; }
+        footer a { color: var(--clr-red); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        footer .footerBrand { font-family: var(--ff-serif); font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem; }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { nav { justify-content: center; flex-direction: column; } .backBtn { width: 100%; white-space: normal; } .galleryItem { min-width: calc(50% - 18px); } .galleryItem img { height: 240px; } }
+        @media (max-width: 480px) { .galleryItem { min-width: 100%; max-width: 100%; } .galleryItem img { height: 280px; } .lightbox .navArrow { font-size: 1.5rem; padding: 10px; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="navBrand">
+            <img src="logo.png" alt="Jumayira International Logo" class="navBrandImg">
+            <span class="navBrandText">Jumayira International</span>
+        </a>
+        <a href="index.html" class="backBtn">Return to Home</a>
+    </nav>
+    <div class="galleryHero">
+        <p class="eyebrow">Jumayira International</p>
+        <h1>A Visual Journey Through <em>Kovalam's Finest</em></h1>
+        <div class="decorativeLine"></div>
+        <p>Step inside our world of comfort and hospitality. Every corner of Jumayira International is designed to make your stay in Kovalam warm and memorable.</p>
+    </div>
+    <div class="categoryNav">
+        <ul>
+            <li><button class="active" data-filter="all">All</button></li>
+            <li><button data-filter="exterior">Exterior</button></li>
+            <li><button data-filter="suites">Rooms</button></li>
+            <li><button data-filter="details">Details</button></li>
+        </ul>
+    </div>
+    <div class="galleryGrid" id="galleryGrid">
+        <div class="galleryItem" data-category="exterior">
+            <img src="hero-main.jpg" alt="Jumayira International hotel exterior in Kovalam" loading="lazy">
+            <div class="overlay"><h2>Hotel Exterior</h2><p>Exterior</p></div>
+        </div>
+        <div class="galleryItem" data-category="exterior">
+            <img src="placeholder-facade.jpg" alt="Hotel facade and entrance" loading="lazy">
+            <div class="overlay"><h2>Grand Entrance</h2><p>Exterior</p></div>
+        </div>
+        <div class="galleryItem" data-category="suites">
+            <img src="placeholder-room-main.jpg" alt="AC Double Bed room at Jumayira International" loading="lazy">
+            <div class="overlay"><h2>AC Double Bed Room</h2><p>Rooms</p></div>
+        </div>
+        <div class="galleryItem" data-category="suites">
+            <img src="placeholder-grid-1.jpg" alt="AC Triple Bed room interior" loading="lazy">
+            <div class="overlay"><h2>AC Triple Bed Room</h2><p>Rooms</p></div>
+        </div>
+        <div class="galleryItem" data-category="suites">
+            <img src="placeholder-grid-2.jpg" alt="AC Four Bed room" loading="lazy">
+            <div class="overlay"><h2>AC Four Bed Room</h2><p>Rooms</p></div>
+        </div>
+        <div class="galleryItem" data-category="suites">
+            <img src="placeholder-grid-3.jpg" alt="Non-AC room accommodation" loading="lazy">
+            <div class="overlay"><h2>Non-AC Room</h2><p>Rooms</p></div>
+        </div>
+        <div class="galleryItem" data-category="details">
+            <img src="placeholder-welcome.jpg" alt="Hotel lobby area" loading="lazy">
+            <div class="overlay"><h2>Lobby Area</h2><p>Details</p></div>
+        </div>
+        <div class="galleryItem" data-category="details">
+            <img src="ceiling-fresco-placeholder.jpg" alt="Hotel interior details" loading="lazy">
+            <div class="overlay"><h2>Interior Details</h2><p>Details</p></div>
+        </div>
+        <div class="galleryItem" data-category="exterior">
+            <img src="placeholder-rooftop.jpg" alt="Nearby Kovalam Beach view" loading="lazy">
+            <div class="overlay"><h2>Beach Proximity</h2><p>Exterior</p></div>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <button class="closeBtn" id="closeLightbox" aria-label="Close lightbox">&times;</button>
+        <button class="navArrow prev" id="prevImg" aria-label="Previous image">&#8249;</button>
+        <img src="" alt="" id="lightboxImg">
+        <div class="caption" id="lightboxCaption"></div>
+        <button class="navArrow next" id="nextImg" aria-label="Next image">&#8250;</button>
+    </div>
+    <footer>
+        <div class="footerBrand">Jumayira International</div>
+        <p>Kovalam, Thiruvananthapuram, Kerala 695527</p>
+        <p style="margin-top: 0.5rem;"><a href="index.html">Return to Home</a></p>
+        <p style="margin-top: 1rem; font-size: 0.75rem; opacity: 0.6;">&copy; 2026 Jumayira International. All rights reserved.</p>
+    </footer>
+    <script>
+        const galleryItems = document.querySelectorAll('.galleryItem');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => { entry.target.classList.add('visible'); }, index * 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        galleryItems.forEach(item => observer.observe(item));
+        const filterBtns = document.querySelectorAll('.categoryNav button');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.add('visible'), 50);
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('visible');
+                    }
+                });
+            });
+        });
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const closeBtn = document.getElementById('closeLightbox');
+        const prevBtn = document.getElementById('prevImg');
+        const nextBtn = document.getElementById('nextImg');
+        let currentIndex = 0;
+        let visibleItems = [];
+        function getVisibleItems() { return Array.from(galleryItems).filter(item => item.style.display !== 'none'); }
+        function openLightbox(index) { visibleItems = getVisibleItems(); currentIndex = index; updateLightbox(); lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeLightboxFn() { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+        function updateLightbox() { const item = visibleItems[currentIndex]; const img = item.querySelector('img'); const title = item.querySelector('.overlay h2'); lightboxImg.src = img.src; lightboxImg.alt = img.alt; lightboxCaption.textContent = title ? title.textContent : ''; }
+        galleryItems.forEach((item, i) => { item.addEventListener('click', () => { const visibleIdx = getVisibleItems().indexOf(item); openLightbox(visibleIdx >= 0 ? visibleIdx : 0); }); });
+        closeBtn.addEventListener('click', closeLightboxFn);
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightboxFn(); });
+        prevBtn.addEventListener('click', () => { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; updateLightbox(); });
+        nextBtn.addEventListener('click', () => { currentIndex = (currentIndex + 1) % visibleItems.length; updateLightbox(); });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightboxFn();
+            if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; updateLightbox(); }
+            if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % visibleItems.length; updateLightbox(); }
+        });
+    </script>
+</body>
+</html>
