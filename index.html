@@ -528,9 +528,12 @@
             main { overflow-x: hidden; }
             .booking-engine { overflow-x: hidden; }
             .booking-card { padding: 2rem 1.25rem; width: 100%; overflow: hidden; box-sizing: border-box; }
+            .booking-card label { font-size: 0.75rem !important; letter-spacing: 0.5px !important; }
             .form-row-2col { display: flex !important; flex-direction: column !important; gap: 1.5rem !important; margin-bottom: 1.5rem !important; width: 100% !important; box-sizing: border-box; }
             .form-row-2col > div, .form-group-full { width: 100% !important; max-width: 100% !important; box-sizing: border-box; }
             .booking-input, select { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; background-color: #fff; min-width: 0; padding: 1rem; }
+            input[type="date"] { -webkit-appearance: none; appearance: none; }
+            input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0.6; }
             .price-display-container { width: 100%; overflow: hidden; padding: 1.5rem; margin: 1.5rem 0; box-sizing: border-box; }
             #price-display { font-size: 2.5rem !important; }
             #loading-screen { padding: 1rem; }
