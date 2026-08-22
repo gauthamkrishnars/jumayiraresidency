@@ -150,8 +150,8 @@
                 var subject = document.getElementById('contact-subject').value;
                 var message = document.getElementById('contact-message').value;
                 var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nSubject: ' + subject + '\n\nMessage:\n' + message;
-                var mailtoUrl = 'mailto:studiodevcore@gmail.com?subject=' + encodeURIComponent('Contact Inquiry - ' + subject) + '&body=' + encodeURIComponent(body);
-                window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
+                var whatsappUrl = 'https://wa.me/919400127085?text=' + encodeURIComponent(body);
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
                 btn.textContent = 'Inquiry Sent!';
                 btn.style.background = '#2d7d2d';
                 setTimeout(function() { btn.textContent = 'Send Inquiry'; btn.style.background = ''; btn.disabled = false; }, 3000);
