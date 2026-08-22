@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Jumayira International</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --clr-bg-cream: #FDF8F6; --clr-text-main: #2A2A2A; --clr-text-alt: #4A4A4A; --clr-red: #B91C1C; --clr-gold: #C5A880; --ff-serif: 'Cormorant Garamond', serif; --ff-script: 'Great Vibes', cursive; --ff-sans: 'Montserrat', sans-serif; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { overflow-x: hidden; }
+        body { font-family: var(--ff-sans); color: var(--clr-text-main); background: var(--clr-bg-cream); min-height: 100vh; display: flex; flex-direction: column; }
+        .error-page { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 4rem 5%; }
+        .error-code { font-family: var(--ff-serif); font-size: clamp(6rem, 15vw, 12rem); font-weight: 300; color: var(--clr-red); opacity: 0.3; line-height: 1; margin-bottom: 1rem; }
+        .error-title { font-family: var(--ff-script); font-size: clamp(2rem, 5vw, 3.5rem); color: var(--clr-text-main); margin-bottom: 1.5rem; }
+        .error-message { font-size: 1.1rem; color: var(--clr-text-alt); max-width: 500px; margin: 0 auto 3rem; line-height: 1.8; }
+        .error-actions { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+        .error-btn { display: inline-block; padding: 1rem 2.5rem; text-decoration: none; font-family: var(--ff-sans); font-weight: 600; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-radius: 4px; transition: all 0.3s ease; }
+        .error-btn.primary { background: var(--clr-red); color: white; }
+        .error-btn.primary:hover { background: #7A1F1F; }
+        .error-btn.secondary { background: transparent; color: var(--clr-text-main); border: 1px solid var(--clr-red); }
+        .error-btn.secondary:hover { background: var(--clr-red); color: white; }
+        .error-links { margin-top: 4rem; }
+        .error-links p { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--clr-text-alt); margin-bottom: 1rem; }
+        .error-links a { color: var(--clr-red); text-decoration: none; font-size: 0.9rem; margin: 0 1rem; transition: color 0.3s; }
+        .error-links a:hover { color: var(--clr-gold); }
+        footer { background: var(--clr-text-main); color: rgba(255,255,255,0.7); text-align: center; padding: 2rem 5%; font-size: 0.85rem; }
+        footer a { color: var(--clr-red); text-decoration: none; }
+        @media(max-width: 768px) { .error-actions { flex-direction: column; align-items: center; } .error-btn { width: 100%; max-width: 280px; text-align: center; } }
+    </style>
+</head>
+<body>
+    <a href="index.html" style="position:fixed;top:1rem;left:5%;z-index:100;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--ff-sans);font-size:0.75rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--clr-text-main);background:rgba(255,255,255,0.85);backdrop-filter:blur(10px);padding:0.7rem 1.2rem;border-radius:4px;border:1px solid rgba(0,0,0,0.08);transition:all 0.3s;">&#8592; Home</a>
+    <div class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-message">The page you are looking for may have been moved, removed, or is temporarily unavailable. Let us guide you back to our hotel.</p>
+        <div class="error-actions">
+            <a href="index.html" class="error-btn primary">Return Home</a>
+            <a href="gallery.html" class="error-btn secondary">View Gallery</a>
+        </div>
+        <div class="error-links">
+            <p>Or explore</p>
+            <a href="index.html#rooms">Rooms</a>
+            <a href="index.html#facilities">Facilities</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Jumayira International, Kovalam. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem;"><a href="index.html">Home</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+    </footer>
+</body>
+</html>
