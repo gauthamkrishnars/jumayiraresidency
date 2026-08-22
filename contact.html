@@ -6,9 +6,9 @@
     <title>Contact Us | Jumayira International - Kovalam, Kerala</title>
     <meta name="description" content="Contact Jumayira International for reservations, inquiries, or special requests. Reach us by phone, email, or visit us in Kovalam, Kerala.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://jumayiraresidency.pages.dev/contact">
+    <link rel="canonical" href="https://jumayiraresidency.pages.dev/contact.html">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jumayiraresidency.pages.dev/contact">
+    <meta property="og:url" content="https://jumayiraresidency.pages.dev/contact.html">
     <meta property="og:title" content="Contact Us | Jumayira International - Kovalam">
     <meta property="og:description" content="Get in touch with Jumayira International for reservations and inquiries.">
     <meta property="og:site_name" content="Jumayira International">
@@ -51,9 +51,14 @@
         .map-section { padding: 0 5% 4rem; }
         .map-container { width: 100%; max-width: 1100px; height: 400px; margin: 0 auto; border-radius: 4px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .map-container iframe { width: 100%; height: 100%; border: 0; filter: grayscale(60%) sepia(15%) hue-rotate(180deg) opacity(0.9); }
-        footer { background: var(--clr-text-main); color: rgba(255,255,255,0.7); text-align: center; padding: 2rem 5%; font-size: 0.85rem; }
+        footer { background: var(--clr-text-main); color: rgba(255,255,255,0.7); text-align: center; padding: 3rem 5%; }
         footer a { color: var(--clr-red); text-decoration: none; }
         footer a:hover { text-decoration: underline; }
+        .footer-brand { font-family: var(--ff-serif); font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin: 1rem 0; }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .footer-links a:hover { color: #fff; }
+        .footer-copy { margin-top: 1.5rem; font-size: 0.75rem; opacity: 0.5; }
         @media(max-width: 768px) { .page-header { padding: 5rem 5% 2rem; } .contact-grid { grid-template-columns: 1fr; gap: 2rem; padding: 0 5% 3rem; } .contact-form { padding: 2rem 1.5rem; } .map-container { height: 300px; } }
     </style>
 </head>
@@ -74,11 +79,15 @@
             </div>
             <div class="contact-item">
                 <div class="label">Phone</div>
-                <div class="value"><a href="tel:+919947849173">+91 9947849173</a></div>
+                <div class="value"><a href="tel:+919400127085">+91 9400127085</a></div>
             </div>
             <div class="contact-item">
                 <div class="label">Email</div>
-                <div class="value"><a href="mailto:jumayiraresidency2016@gmail.com">jumayiraresidency2016@gmail.com</a></div>
+                <div class="value"><a href="mailto:studiodevcore@gmail.com">studiodevcore@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+                <div class="label">WhatsApp</div>
+                <div class="value"><a href="https://wa.me/919400127085?text=Hi%20Jumayira%20International%2C%20I%20have%20a%20question." target="_blank" rel="noopener">Chat on WhatsApp</a></div>
             </div>
             <div class="contact-item">
                 <div class="label">Reception Hours</div>
@@ -131,7 +140,7 @@
                 var subject = document.getElementById('contact-subject').value;
                 var message = document.getElementById('contact-message').value;
                 var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nSubject: ' + subject + '\n\nMessage:\n' + message;
-                var mailtoUrl = 'mailto:jumayiraresidency2016@gmail.com?subject=' + encodeURIComponent('Contact Inquiry - ' + subject) + '&body=' + encodeURIComponent(body);
+                var mailtoUrl = 'mailto:studiodevcore@gmail.com?subject=' + encodeURIComponent('Contact Inquiry - ' + subject) + '&body=' + encodeURIComponent(body);
                 window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
                 btn.textContent = 'Inquiry Sent!';
                 btn.style.background = '#2d7d2d';
@@ -146,8 +155,17 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2026 Jumayira International, Kovalam. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem;"><a href="index.html">Home</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a></p>
+        <div class="footer-brand">Jumayira International</div>
+        <p>Kovalam, Thiruvananthapuram, Kerala 695527</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#rooms">Rooms</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Jumayira International, Kovalam. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
