@@ -289,13 +289,14 @@
         .mobile-logo-img { display: none; width: 45px; height: auto; }
 
         .btn-book { 
-            background: var(--clr-red);
-            color: #fff !important; padding: 0.65rem 1.5rem; transition: all 0.2s ease; border: none;
+            background-color: var(--clr-red);
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 140 45"><path fill="%23B91C1C" stroke="%23ffffff" stroke-width="1.5" d="M 12 1.5 H 128 A 10.5 10.5 0 0 0 138.5 12 V 33 A 10.5 10.5 0 0 0 128 43.5 H 12 A 10.5 10.5 0 0 0 1.5 33 V 12 A 10.5 10.5 0 0 0 12 1.5 Z"/></svg>'); 
+            background-size: 100% 100%; background-repeat: no-repeat; background-position: center;
+            color: #fff !important; padding: 0.65rem 1.8rem; transition: transform 0.2s ease, filter 0.2s ease; border: none;
             font-family: var(--ff-sans); font-weight: 600; letter-spacing: 1.5px; text-decoration: none; font-size: 0.75rem;
             display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; cursor: pointer; text-transform: uppercase;
-            border-radius: 3px;
         }
-        .btn-book:hover { background: var(--clr-red-dark); transform: translateY(-1px); }
+        .btn-book:hover { transform: scale(1.05); filter: brightness(1.1); }
 
         /* --- MOBILE OVERLAY MENU --- */
         .hamburger { display: none; flex-direction: column; justify-content: space-between; width: 32px; height: 20px; cursor: pointer; }
