@@ -1050,7 +1050,10 @@
                         <div class="form-group-full" style="margin-bottom: 3rem;">
                             <input type="tel" name="phone" placeholder="Phone Number" class="booking-input" required aria-label="Phone Number">
                         </div>
-                        <button type="submit" class="submit-btn" id="submit-button">Request Reservation</button>
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                            <button type="submit" class="submit-btn" id="submit-button" style="flex:1;min-width:200px;">Request Reservation</button>
+                            <a href="tel:+919400127085" class="submit-btn" style="flex:1;min-width:200px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;background:var(--clr-red-dark);">Call to Book</a>
+                        </div>
                     </form>
 
                     <div id="success-state" style="display: none; text-align: center; padding: 4rem 0;">
@@ -1058,7 +1061,7 @@
                             <span style="font-size: 3.5rem; color: var(--clr-red);">✓</span>
                         </div>
                         <h2 class="serif-title" style="font-size: 3rem; color: var(--clr-text-main); margin-bottom: 1.5rem;">Inquiry Received</h2>
-                        <p class="body-text">Thank you for choosing Jumayira International. Our team will contact you shortly to confirm your reservation details.</p>
+                        <p class="body-text">Your reservation request has been sent via WhatsApp and Email. Our team will contact you shortly to confirm your booking.</p>
                     </div>
                 </div>
             </div>
@@ -1364,13 +1367,15 @@
                 "Stay Details:\n" + "Room Type: " + roomName + "\n" + "Check-in: " + checkinDate + "\n" + "Check-out: " + checkoutDate + "\n\n" +
                 "Estimated Total: " + finalPrice + "\n\n" + "Please confirm availability.";
 
+            var whatsappUrl = "https://wa.me/919400127085?text=" + encodeURIComponent(body);
             var emailUrl = "mailto:studiodevcore@gmail.com?subject=" + encodeURIComponent("Room Reservation Request") + "&body=" + encodeURIComponent(body);
 
             quoteForm.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
             quoteForm.style.opacity = '0';
             quoteForm.style.transform = 'translateY(-10px)';
             setTimeout(function() {
-                window.open(emailUrl, '_blank', 'noopener,noreferrer');
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+                setTimeout(function() { window.open(emailUrl, '_blank', 'noopener,noreferrer'); }, 1500);
                 quoteForm.style.display = 'none';
                 successState.style.display = 'block';
                 successState.style.opacity = '0';
