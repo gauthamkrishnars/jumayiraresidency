@@ -12,6 +12,12 @@
     <meta property="og:title" content="Contact Us | Jumayira International - Kovalam">
     <meta property="og:description" content="Get in touch with Jumayira International for reservations and inquiries.">
     <meta property="og:site_name" content="Jumayira International">
+    <meta property="og:image" content="https://jumayiraresidency.pages.dev/exterior.jpeg">
+    <meta property="og:image:alt" content="Jumayira International hotel in Kovalam Kerala">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Jumayira International - Kovalam">
+    <meta name="twitter:description" content="Get in touch with Jumayira International for reservations and inquiries.">
+    <meta name="twitter:image" content="https://jumayiraresidency.pages.dev/exterior.jpeg">
     <link rel="icon" href="Logo.png" type="image/png">
     <link rel="apple-touch-icon" href="Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,13 +117,32 @@
                     <label for="contact-message">Message</label>
                     <textarea id="contact-message" name="message" placeholder="Tell us about your requirements..." required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Inquiry</button>
+                <button type="submit" class="submit-btn" id="contact-submit">Send Inquiry</button>
             </form>
+            <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('contact-submit');
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+                var name = document.getElementById('contact-name').value;
+                var email = document.getElementById('contact-email').value;
+                var phone = document.getElementById('contact-phone').value;
+                var subject = document.getElementById('contact-subject').value;
+                var message = document.getElementById('contact-message').value;
+                var body = 'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nSubject: ' + subject + '\n\nMessage:\n' + message;
+                var mailtoUrl = 'mailto:jumayiraresidency2016@gmail.com?subject=' + encodeURIComponent('Contact Inquiry - ' + subject) + '&body=' + encodeURIComponent(body);
+                window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
+                btn.textContent = 'Inquiry Sent!';
+                btn.style.background = '#2d7d2d';
+                setTimeout(function() { btn.textContent = 'Send Inquiry'; btn.style.background = ''; btn.disabled = false; }, 3000);
+            });
+            </script>
         </div>
     </div>
     <div class="map-section">
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.5!2d76.9820096!3d8.3981748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05a5732f7ae777:0x79035bceb71b3059!2sJumayira%20International!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" title="Jumayira International Location on Google Maps"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.5!2d76.9820096!3d8.3981748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05a5732f7ae777:0x79035bceb71b3059!2sJumayira%20International!5e0!3m2!1sen!2sin!4v1724332800000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" title="Jumayira International Location on Google Maps"></iframe>
         </div>
     </div>
     <footer>
