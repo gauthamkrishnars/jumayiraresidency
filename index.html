@@ -275,16 +275,16 @@
         header.entrance-ready { animation: headerEntrance 1.2s var(--ease-out-smooth) forwards; }
         header.scrolled { background: rgba(255, 255, 255, 0.75); box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 0.7rem 5%; }
 
-        .header-left { display: flex; align-items: center; justify-content: flex-end; gap: 2.5rem; flex: 1; min-width: 0; }
-        .header-center { text-align: center; padding: 0 2rem; flex: 0 0 auto; }
-        .header-right { display: flex; align-items: center; justify-content: flex-start; gap: 2.5rem; flex: 1; min-width: 0; }
+        .header-left { display: flex; align-items: center; justify-content: flex-end; gap: 1.5rem; flex: 1; min-width: 0; overflow: hidden; }
+        .header-center { text-align: center; padding: 0 1.5rem; flex: 0 1 auto; max-width: 280px; overflow: hidden; }
+        .header-right { display: flex; align-items: center; justify-content: flex-start; gap: 1.5rem; flex: 1; min-width: 0; overflow: hidden; }
         
-        .desktop-nav { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; align-items: center; }
+        .desktop-nav { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; align-items: center; }
         .desktop-nav a { font-family: var(--ff-sans); font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--clr-text-main); font-weight: 500; transition: color 0.3s; }
         .desktop-nav a:hover { color: var(--clr-red); }
         
         .logo-link { text-decoration: none; display: flex; flex-direction: column; align-items: center; }
-        .desktop-logo-text h1 { font-family: var(--ff-serif); font-weight: 500; font-size: 2rem; color: var(--clr-red); text-transform: uppercase; line-height: 1; margin-bottom: 3px; letter-spacing: 1.5px; }
+        .desktop-logo-text h1 { font-family: var(--ff-serif); font-weight: 500; font-size: 1.5rem; color: var(--clr-red); text-transform: uppercase; line-height: 1.1; margin-bottom: 3px; letter-spacing: 1px; }
         .desktop-logo-text span { font-family: var(--ff-sans); font-size: 0.6rem; letter-spacing: 0.4em; color: var(--clr-red); display: block; font-weight: 600; text-transform: uppercase; }
         .mobile-logo-img { display: none; width: 45px; height: auto; }
 
