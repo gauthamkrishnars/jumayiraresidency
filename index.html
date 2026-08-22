@@ -289,14 +289,13 @@
         .mobile-logo-img { display: none; width: 45px; height: auto; }
 
         .btn-book { 
-            background-color: transparent; 
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 140 45"><path fill="%23B91C1C" stroke="%23ffffff" stroke-width="1.5" d="M 12 1.5 H 128 A 10.5 10.5 0 0 0 138.5 12 V 33 A 10.5 10.5 0 0 0 128 43.5 H 12 A 10.5 10.5 0 0 0 1.5 33 V 12 A 10.5 10.5 0 0 0 12 1.5 Z"/></svg>'); 
-            background-size: 100% 100%; background-repeat: no-repeat; background-position: center;
-            color: #fff !important; padding: 0.7rem 2rem; transition: transform 0.3s ease, filter 0.3s ease; border: none;
+            background: var(--clr-red);
+            color: #fff !important; padding: 0.65rem 1.5rem; transition: all 0.2s ease; border: none;
             font-family: var(--ff-sans); font-weight: 600; letter-spacing: 1.5px; text-decoration: none; font-size: 0.75rem;
             display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; cursor: pointer; text-transform: uppercase;
+            border-radius: 3px;
         }
-        .btn-book:hover { transform: scale(1.05); filter: brightness(1.1); }
+        .btn-book:hover { background: var(--clr-red-dark); transform: translateY(-1px); }
 
         /* --- MOBILE OVERLAY MENU --- */
         .hamburger { display: none; flex-direction: column; justify-content: space-between; width: 32px; height: 20px; cursor: pointer; }
@@ -606,8 +605,7 @@
     </div>
 
     <!-- 3-COLUMN HEADER -->
-    <header id="main-header">
-        <div class="header-left">
+    <header id="main-header">        <div class="header-left">
             <div class="hamburger" id="hamburger-menu">
                 <span></span><span></span><span></span>
             </div>
@@ -631,12 +629,13 @@
         </div>
 
         <div class="header-right">
-            <ul class="desktop-nav">
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#booking-engine" class="btn-book">Book Now</a></li>
-            </ul>
+            <nav aria-label="Secondary Navigation">
+                <ul class="desktop-nav">
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#booking-engine" class="btn-book">Book Now</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
