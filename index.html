@@ -1061,7 +1061,7 @@
                             <span style="font-size: 3.5rem; color: var(--clr-red);">✓</span>
                         </div>
                         <h2 class="serif-title" style="font-size: 3rem; color: var(--clr-text-main); margin-bottom: 1.5rem;">Inquiry Received</h2>
-                        <p class="body-text">Your reservation request has been sent via WhatsApp and Email. Our team will contact you shortly to confirm your booking.</p>
+                        <p class="body-text">Your reservation request has been sent via WhatsApp. Our team will contact you shortly to confirm your booking.</p>
                     </div>
                 </div>
             </div>
@@ -1368,14 +1368,12 @@
                 "Estimated Total: " + finalPrice + "\n\n" + "Please confirm availability.";
 
             var whatsappUrl = "https://wa.me/919400127085?text=" + encodeURIComponent(body);
-            var emailUrl = "mailto:studiodevcore@gmail.com?subject=" + encodeURIComponent("Room Reservation Request") + "&body=" + encodeURIComponent(body);
 
             quoteForm.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
             quoteForm.style.opacity = '0';
             quoteForm.style.transform = 'translateY(-10px)';
             setTimeout(function() {
                 window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-                setTimeout(function() { window.open(emailUrl, '_blank', 'noopener,noreferrer'); }, 1500);
                 quoteForm.style.display = 'none';
                 successState.style.display = 'block';
                 successState.style.opacity = '0';
