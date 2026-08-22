@@ -1,8 +1,0 @@
-# Jumayira International - robots.txt
-# https://jumayiraresidency.pages.dev
-
-User-agent: *
-Allow: /
-Disallow: /assets/
-
-Sitemap: https://jumayiraresidency.pages.dev/sitemap.xml
