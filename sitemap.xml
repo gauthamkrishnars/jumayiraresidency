@@ -4,64 +4,190 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://jumayiraresidency.pages.dev/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://jumayirainternational.com/</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/exterior.jpeg</image:loc>
+      <image:loc>https://jumayirainternational.com/exterior.jpeg</image:loc>
       <image:title>Jumayira International hotel exterior in Kovalam Kerala</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/reception.jpeg</image:loc>
+      <image:loc>https://jumayirainternational.com/reception.jpeg</image:loc>
       <image:title>Jumayira International reception area</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/ac double bed.JPG</image:loc>
+      <image:loc>https://jumayirainternational.com/ac double bed.JPG</image:loc>
       <image:title>AC Double Bed room at Jumayira International Kovalam</image:title>
     </image:image>
   </url>
 
   <!-- Gallery Page -->
   <url>
-    <loc>https://jumayiraresidency.pages.dev/gallery.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://jumayirainternational.com/gallery.html</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <!-- Exterior -->
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/exterior.jpeg</image:loc>
+      <image:loc>https://jumayirainternational.com/exterior.jpeg</image:loc>
       <image:title>Jumayira International hotel exterior</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/ac double bed.JPG</image:loc>
-      <image:title>AC Double Bed room at Jumayira International</image:title>
+      <image:loc>https://jumayirainternational.com/outside side plants.jpeg</image:loc>
+      <image:title>Garden and plants at Jumayira International Kovalam</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://jumayiraresidency.pages.dev/bathroom 1.jpeg</image:loc>
+      <image:loc>https://jumayirainternational.com/stairs.jpeg</image:loc>
+      <image:title>Hotel staircase at Jumayira International</image:title>
+    </image:image>
+    <!-- Reception & Common -->
+    <image:image>
+      <image:loc>https://jumayirainternational.com/reception.jpeg</image:loc>
+      <image:title>Reception area at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/window curtain.jpeg</image:loc>
+      <image:title>Window and curtain at Jumayira International</image:title>
+    </image:image>
+    <!-- AC Rooms -->
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac double bed.JPG</image:loc>
+      <image:title>AC Double Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac double bed 2.JPG</image:loc>
+      <image:title>AC Double Bed room alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac triple bed.JPG</image:loc>
+      <image:title>AC Triple Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac triple bed 2.JPG</image:loc>
+      <image:title>AC Triple Bed room alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac four bed.JPG</image:loc>
+      <image:title>AC Four Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/ac four bed 2.JPG</image:loc>
+      <image:title>AC Four Bed room alternate view at Jumayira International</image:title>
+    </image:image>
+    <!-- Non-AC Rooms -->
+    <image:image>
+      <image:loc>https://jumayirainternational.com/non ac double bed.JPG</image:loc>
+      <image:title>Non-AC Double Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/non ac double bed 2.JPG</image:loc>
+      <image:title>Non-AC Double Bed room alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/non ac double bed 4.JPG</image:loc>
+      <image:title>Non-AC Double Bed room third view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/non ac triple bed.JPG</image:loc>
+      <image:title>Non-AC Triple Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/non ac four bed.JPG</image:loc>
+      <image:title>Non-AC Four Bed room at Jumayira International Kovalam</image:title>
+    </image:image>
+    <!-- Rooms -->
+    <image:image>
+      <image:loc>https://jumayirainternational.com/another bed.JPG</image:loc>
+      <image:title>Bedroom interior at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/another bed 2.JPG</image:loc>
+      <image:title>Bedroom alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/beds.JPG</image:loc>
+      <image:title>Bed setup at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/bed with lights on.jpeg</image:loc>
+      <image:title>Room with ambient lighting at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/aesthetic bed lights.jpeg</image:loc>
+      <image:title>Aesthetic bed lighting at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/double bed tv.JPG</image:loc>
+      <image:title>Room with TV setup at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/tv and table.JPG</image:loc>
+      <image:title>TV and table setup at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/tv and window.jpeg</image:loc>
+      <image:title>TV and window view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/tv on table.JPG</image:loc>
+      <image:title>TV on table at Jumayira International Kovalam</image:title>
+    </image:image>
+    <!-- Bathrooms & Amenities -->
+    <image:image>
+      <image:loc>https://jumayirainternational.com/bathroom 1.jpeg</image:loc>
       <image:title>Bathroom at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/bathroom 2.jpeg</image:loc>
+      <image:title>Bathroom alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/bathroom and shower 1.jpeg</image:loc>
+      <image:title>Bathroom and shower area at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/bathroom and shower 2.jpeg</image:loc>
+      <image:title>Bathroom and shower alternate view at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/shower 1.jpeg</image:loc>
+      <image:title>Shower facilities at Jumayira International Kovalam</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/mini shelf.JPG</image:loc>
+      <image:title>Mini shelf in room at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/shelf and table.JPG</image:loc>
+      <image:title>Shelf and table setup at Jumayira International</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jumayirainternational.com/table, shelf, curtain.jpeg</image:loc>
+      <image:title>Table, shelf and curtain at Jumayira International</image:title>
     </image:image>
   </url>
 
   <!-- Contact Page -->
   <url>
-    <loc>https://jumayiraresidency.pages.dev/contact.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://jumayirainternational.com/contact.html</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://jumayiraresidency.pages.dev/privacy.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://jumayirainternational.com/privacy.html</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Terms of Service -->
   <url>
-    <loc>https://jumayiraresidency.pages.dev/terms.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <loc>https://jumayirainternational.com/terms.html</loc>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
